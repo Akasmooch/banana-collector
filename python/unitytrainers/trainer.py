@@ -1,9 +1,8 @@
 # # Unity ML-Agents Toolkit
 import logging
 
-import tensorflow as tf
 import numpy as np
-
+import tensorflow as tf
 from unityagents import UnityException, AllBrainInfo
 
 logger = logging.getLogger("unityagents")
