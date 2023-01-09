@@ -2,24 +2,20 @@ import atexit
 import glob
 import io
 import logging
-import numpy as np
 import os
 import subprocess
+from sys import platform
 
-from .brain import BrainInfo, BrainParameters, AllBrainInfo
-from .exception import UnityEnvironmentException, UnityActionException, UnityTimeOutException
-from .curriculum import Curriculum
-
-from communicator_objects import UnityRLInput, UnityRLOutput, AgentActionProto,\
-    EnvironmentParametersProto, UnityRLInitializationInput, UnityRLInitializationOutput,\
+import numpy as np
+from PIL import Image
+from communicator_objects import UnityRLInput, UnityRLOutput, AgentActionProto, \
+    EnvironmentParametersProto, UnityRLInitializationInput, UnityRLInitializationOutput, \
     UnityInput, UnityOutput
 
+from .brain import BrainInfo, BrainParameters, AllBrainInfo
+from .curriculum import Curriculum
+from .exception import UnityEnvironmentException, UnityActionException, UnityTimeOutException
 from .rpc_communicator import RpcCommunicator
-from .socket_communicator import SocketCommunicator
-
-
-from sys import platform
-from PIL import Image
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("unityagents")
