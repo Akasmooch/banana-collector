@@ -2,10 +2,10 @@ import logging
 import socket
 import struct
 
-from .communicator import Communicator
 from communicator_objects import UnityMessage, UnityOutput, UnityInput
-from .exception import UnityTimeOutException
 
+from .communicator import Communicator
+from .exception import UnityTimeOutException
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("unityagents")
