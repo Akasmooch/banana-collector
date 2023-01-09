@@ -3,16 +3,16 @@
 # Launches unitytrainers for each External Brains in a Unity Environment
 
 import logging
-import numpy as np
 import os
 import re
+
+import numpy as np
 import tensorflow as tf
 import yaml
-
 from tensorflow.python.tools import freeze_graph
-from unitytrainers.ppo.trainer import PPOTrainer
-from unitytrainers.bc.trainer import BehavioralCloningTrainer
 from unityagents import UnityEnvironment, UnityEnvironmentException
+from unitytrainers.bc.trainer import BehavioralCloningTrainer
+from unitytrainers.ppo.trainer import PPOTrainer
 
 
 class TrainerController(object):
