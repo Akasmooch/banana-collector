@@ -7,7 +7,6 @@ import os
 
 import numpy as np
 import tensorflow as tf
-
 from unityagents import AllBrainInfo
 from unitytrainers.bc.models import BehavioralCloningModel
 from unitytrainers.buffer import Buffer
