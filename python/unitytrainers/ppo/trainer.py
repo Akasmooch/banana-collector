@@ -7,7 +7,6 @@ import os
 
 import numpy as np
 import tensorflow as tf
-
 from unityagents import AllBrainInfo, BrainInfo
 from unitytrainers.buffer import Buffer
 from unitytrainers.ppo.models import PPOModel
