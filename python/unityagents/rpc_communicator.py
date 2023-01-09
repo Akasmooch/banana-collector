@@ -1,14 +1,13 @@
 import logging
-import grpc
-
-from multiprocessing import Pipe
 from concurrent.futures import ThreadPoolExecutor
+from multiprocessing import Pipe
+
+import grpc
+from communicator_objects import UnityMessage, UnityInput, UnityOutput
+from communicator_objects import UnityToExternalServicer, add_UnityToExternalServicer_to_server
 
 from .communicator import Communicator
-from communicator_objects import UnityToExternalServicer, add_UnityToExternalServicer_to_server
-from communicator_objects import UnityMessage, UnityInput, UnityOutput
 from .exception import UnityTimeOutException
-
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("unityagents")
