@@ -1,11 +1,11 @@
 import unittest.mock as mock
-import pytest
 
 import numpy as np
+import pytest
 import tensorflow as tf
-
-from unitytrainers.bc.models import BehavioralCloningModel
 from unityagents import UnityEnvironment
+from unitytrainers.bc.models import BehavioralCloningModel
+
 from .mock_communicator import MockCommunicator
 
 
