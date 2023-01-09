@@ -1,8 +1,7 @@
 import json
+import logging
 
 from .exception import UnityEnvironmentException
-
-import logging
 
 logger = logging.getLogger("unityagents")
 
