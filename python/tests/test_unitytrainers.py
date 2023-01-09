@@ -1,13 +1,14 @@
-import yaml
 import unittest.mock as mock
-import pytest
 
-from unitytrainers.trainer_controller import TrainerController
+import pytest
+import yaml
+from unityagents import UnityEnvironmentException
+from unitytrainers.bc.trainer import BehavioralCloningTrainer
 from unitytrainers.buffer import Buffer
 from unitytrainers.models import *
 from unitytrainers.ppo.trainer import PPOTrainer
-from unitytrainers.bc.trainer import BehavioralCloningTrainer
-from unityagents import UnityEnvironmentException
+from unitytrainers.trainer_controller import TrainerController
+
 from .mock_communicator import MockCommunicator
 
 dummy_start = '''{
