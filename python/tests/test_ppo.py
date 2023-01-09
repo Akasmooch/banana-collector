@@ -1,12 +1,12 @@
 import unittest.mock as mock
-import pytest
 
 import numpy as np
+import pytest
 import tensorflow as tf
-
+from unityagents import UnityEnvironment
 from unitytrainers.ppo.models import PPOModel
 from unitytrainers.ppo.trainer import discount_rewards
-from unityagents import UnityEnvironment
+
 from .mock_communicator import MockCommunicator
 
 
