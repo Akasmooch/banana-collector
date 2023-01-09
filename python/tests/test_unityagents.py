@@ -1,14 +1,12 @@
 import json
 import unittest.mock as mock
-import pytest
-import struct
 
 import numpy as np
-
+import pytest
 from unityagents import UnityEnvironment, UnityEnvironmentException, UnityActionException, \
     BrainInfo, Curriculum
-from .mock_communicator import MockCommunicator
 
+from .mock_communicator import MockCommunicator
 
 dummy_curriculum = json.loads('''{
     "measure" : "reward",
