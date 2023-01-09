@@ -21,7 +21,7 @@ Environment: [Unity ML-Agents Toolkit](https://github.com/Unity-Technologies/ml-
 The state of the environment has 37 dimensions, including velocity and perceptions of its environment in terms of vectors.
 
 ### Rewards
-The agent is given a reward of **+1** if it collects a yellow banana, and a reward of **-1** if it collects a blue banana. The environment is _solved_ when the agent accumulates an reward of **+13** over 100 episodes.
+The agent is given a reward of **+1** if it collects a yellow banana, and a reward of **-1** if it collects a blue banana. The environment is _solved_ when the agent accumulates a reward of **+13** over 100 episodes.
 
 ## Installation (Windows 10 64-bit)
 1. Install [Anaconda](https://docs.anaconda.com/anaconda/install/) if you don't have it already.
