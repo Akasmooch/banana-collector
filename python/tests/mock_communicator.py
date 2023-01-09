@@ -1,8 +1,8 @@
 
-from unityagents.communicator import Communicator
-from communicator_objects import UnityMessage, UnityOutput, UnityInput,\
-    ResolutionProto, BrainParametersProto, UnityRLInitializationOutput,\
+from communicator_objects import UnityOutput, UnityInput, \
+    ResolutionProto, BrainParametersProto, UnityRLInitializationOutput, \
     AgentInfoProto, UnityRLOutput
+from unityagents.communicator import Communicator
 
 
 class MockCommunicator(Communicator):
